@@ -159,7 +159,7 @@ function valueOddOrEven(number) {
   
   ******************************************************************************/
   
-  function modifyHeroes(heroes) {
+  const heroes = ["Spider-Man", "Thor", "Hulk", "Doctor Strange", "Iron-Man", "Black Widow"]
       heroes.shift()
       
       const index = heroes.indexOf("Doctor Strange")
@@ -172,15 +172,10 @@ function valueOddOrEven(number) {
         heroes.splice(thorIndex, 2, "Captain America") 
       }
       
-      return heroes.join("💪")
-    }
+      const result = heroes.join("💪")
     
-    
-    const heroes = ["Spider-Man", "Thor", "Hulk", "Doctor Strange", "Iron-Man", "Black Widow"]
-    const result = modifyHeroes(heroes)
   
-  
-    console.log(result)
+      console.log(result)
     
   /******************************************************************************
   7.
