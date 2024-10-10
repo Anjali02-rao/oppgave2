@@ -106,12 +106,13 @@ function valueOddOrEven(number) {
   ["Two", "Three", "Four", "Five"]
   ******************************************************************************/
    
-      const array = ["Red", "Green", "Blue", "Yellow"]
-      const array1 = ["One", "Two", "Three", "Four", "Five", "Six"]
-  
-  
-      console.log(array.splice(1, 2))
-      console.log(array1.splice(1, 4))
+    function removeIndex(arr) {
+      return arr.slice(1, -1)
+      // begynne med index 1 og slette den siste indexen.
+  }
+    
+      console.log(removeIndex(["Red", "Green", "Blue", "Yellow"]))
+      console.log(removeIndex(["One", "Two", "Three", "Four", "Five", "Six"]))
   
   
   
@@ -134,8 +135,8 @@ function valueOddOrEven(number) {
   
   ******************************************************************************/
   
-  function changeContent(space) {
-      const removedSpace = space.trim(); 
+  function changeContent(text) {
+      const removedSpace = text.trim(); 
       const modifiedText = removedSpace.replace('hard', 'fun'); 
       return modifiedText; 
     }
@@ -211,7 +212,7 @@ function valueOddOrEven(number) {
   
   function sunnyDay(cherry) {
     if (typeof cherry === "string") {
-      return "😎cherry😎"
+      return "😎${cherry}😎"
     }
   
     if (typeof cherry === "object") {
